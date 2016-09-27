@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h2>Include</h2>
+{% assign patterns = site.patterns | where: 'identifier', 'button' %}
+{% for pattern in patterns %}
+    {{ pattern.content }}
+{% endfor %}
+
+<h2>iFrame</h2>
+<iframe src="patterns/button.html"></iframe>
